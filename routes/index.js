@@ -12,11 +12,9 @@ var upload = multer({
 });
 
 
-
 var user = require('./User.js');
-var userUpload = require('./Upload.js');
 var userPlan = require('./userPlan.js');
-var role = require('./role.js');
+var auth = require('./auth.js');
 
 
 
@@ -53,9 +51,6 @@ router.get("/api/v1/userPlans", userPlan.getPlan);
 router.post('/api/v1/userPlans/savePlan', userPlan.createUserPlan);
 
 
-//Routes for role
-router.get('/api/v1/roles', role.getRole);
-router.post('/api/v1/roles', role.creteRole);
 
 
 
