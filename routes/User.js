@@ -8,7 +8,7 @@ var userObject = module.exports = {};
 
 userObject.getUsers = function (req, res) {
   var options = {
-    perPage: parseInt(req.query.limit) || 20,
+    perPage: parseInt(req.query.limit) || 5,
     page: parseInt(req.query.page) || 1,
     sortBy: req.query.sortBy || 'userName', 
   };

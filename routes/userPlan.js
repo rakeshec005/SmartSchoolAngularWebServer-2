@@ -30,7 +30,7 @@ planObject.getPlan = function (req, res) {
 planObject.createUserPlan = function (req, res) {
 
     var userPlana = new planModel({
-        planName: req.body.planName,
+        planName: req.body.planmodel.planName,
         owner: "santosh",
         coPlanners: [ "c1",
          "c2",
